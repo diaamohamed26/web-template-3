@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Crimson Text", serif;
+}
+header{
+    background-image: linear-gradient(190deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://assets.website-files.com/5bb62929f4d1fd759a1dce2a/5bb76b6c73d32b5386b4d97a_banner.jpg");
+    width: 100%;
+    height: 130vh;
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    background-color: white;
+    width: 100%;
+}
+.navbar-brand{
+    float: left;
+    justify-content: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+}
+.nav-link{
+    color: black;
+}
+.hero-section{
+    text-align: center;
+    color: white;
+    padding-top: 15%;
+}
+.hero-section h1{
+    font-size: 3rem;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+.btn:hover{
+    background-color: rgb(70, 70, 70);
+}
+.section-less{
+    margin-top: 20px;
+    margin-bottom: 20%;
+    
+}
+.list-items{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.item{
+    position: relative;
+    background-color: black;
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    width: 30%;
+}
+.featured-section h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 40;
+    margin-bottom: 50px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.product{
+    text-align: center;
+}
+.product img{
+    width: 100%;
+    height: 100vh;
+}
+.product h4{
+    margin-top: 20px;
+}
+.brands-section h1{
+    text-align: center;
+    margin-top: 20%;
+    font-weight: 400;
+    font-size: 40;
+    margin-bottom: 50px;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
+.logos img{
+    width: 92px;
+    height: 47;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 30vh;
+    margin-top: 15%;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.navbar-footer a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.social-media i{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.copyright{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+@media screen and (max-width: 992px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar{
+        position: absolute;
+        z-index: 100; 
+        width: 100%;       
+    }
+    .hero-section{
+        position: absolute;
+        margin-top: 40%;
+        
+    }
+    .list-items{
+        display: block;
+        position: relative;
+    }
+    .item{
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .products{
+        display: block;
+
+    }
+    .logos{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    
+
+}
